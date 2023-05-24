@@ -1,5 +1,5 @@
 [package]
-name = "parallel_markets"
+name = "parallel_markets_client"
 version = "0.1.0"
 edition = "2021"
 
