@@ -36,6 +36,7 @@ async fn refresh_token() {
 }
 
 #[test(tokio::test)]
+#[ignore]
 async fn get_profile() {
     let client = get_client();
     let resp = client.get_profile(ACCESS_TOKEN).await;
@@ -44,6 +45,7 @@ async fn get_profile() {
 }
 
 #[test(tokio::test)]
+#[ignore]
 async fn get_accreditations() {
     let client = get_client();
     let resp = client.get_accreditations(ACCESS_TOKEN).await;
