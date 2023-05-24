@@ -1,0 +1,19 @@
+[package]
+name = "parallel_markets"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+json_api_client = { git = "https://github.com/kycdao/json-api-client.git" }
+either = { version = "1.8", features = ["serde"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+url = "2.3"
+time = { version = "0.3", features = ["serde-well-known"] }
+thiserror = "1.0"
+
+[dev-dependencies]
+env_logger = "0.10"
+test-log = "0.2"
+tokio = { version = "1.25", features = ["macros"] }
